@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Collage</title>
+
+	<style type="text/css">
+		body {
+			background: pink;
+		}
+
+		.container {
+			background: purple;
+			min-height: 100vh;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-template-rows: 1fr 1fr 1fr;
+			grid-template-areas:
+				"p1 p1 p2 p2"
+				"p3 p4 p4 p5"
+				"p6 p6 p7 p7";
+			grid-gap: 10px;
+		}
+
+		.item {
+			background: lightblue;
+			min-height: 100px;
+			min-width: 100px;
+		}
+
+		#photo1 {
+			grid-area: p1;
+			background: url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/10/13/tokyo-main.jpg?w968h681);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo2 {
+			grid-area: p2;
+			background: url(https://www.gtreview.com/wp-content/uploads/2015/02/Tokyo-Tower-Japan-Night.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo3 {
+			grid-area: p3;
+			background: url(https://images-production.freetls.fastly.net/uploads/photos/file/276379/cherry-blossoms.jpg?auto=compress&crop=top&fit=max&q=55&w=750);
+			background-size: cover;
+		}
+
+		#photo4{
+			grid-area: p4;
+			background: url(https://upload.wikimedia.org/wikipedia/commons/3/3f/Rainbow_colored_Rainbow_Bridge_at_night.jpg);
+			background-size: cover;
+		}
+
+		#photo5{
+			grid-area: p5;
+			background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg/240px-Tokyo_Skytree_2014_%E2%85%A2.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo6{
+			grid-area: p6;
+			background: url(https://res.cloudinary.com/hstcxjula/image/upload/v1469681108/qtph705vi6q3tclc1ash.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		#photo7{
+			grid-area: p7;
+			background: url(https://www.telegraph.co.uk/content/dam/Travel/Destinations/Asia/Japan/Tokyo/Tokyo%20lead-xlarge.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item" id="photo1"></div>
+		<div class="item" id="photo2"></div>
+		<div class="item" id="photo3"></div>
+		<div class="item" id="photo4"></div>
+		<div class="item" id="photo5"></div>
+		<div class="item" id="photo6"></div>
+		<div class="item" id="photo7"></div>
+	</div>
+
+
+</body>
+</html>
